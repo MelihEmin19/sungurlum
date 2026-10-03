@@ -2,16 +2,6 @@
 
 **Sungurlum**, yerel halk ile esnafı tek bir dijital platformda buluşturmayı amaçlayan hiper yerel (hyper-local) bir mobil pazar yeri ve şehir portalıdır. Kullanıcılar sanal market alışverişi yapabilir, yemek siparişi verebilir veya ilçedeki tüm hizmet verenlere tek bir tıkla ulaşabilir. Küçük ve orta ölçekli işletmelerin (KOBİ) dijitalleşmesine olanak tanıyarak yerel ekonomiyi canlandırmayı hedefler.
 
-## 📸 Uygulama Görselleri
-
-*(Buraya uygulamanın çalıştığını gösteren 10-15 saniyelik bir ekran kaydı GIF olarak eklenebilir veya aşağıdaki yer tutuculara ekran görüntüleri konulabilir)*
-
-<div align="center" style="display: flex; gap: 10px; justify-content: center;">
-  <img src="https://via.placeholder.com/250x500.png?text=Ana+Ekran" alt="Ana Ekran" width="250" />
-  <img src="https://via.placeholder.com/250x500.png?text=Esnaf+Rehberi" alt="Esnaf Rehberi" width="250" />
-  <img src="https://via.placeholder.com/250x500.png?text=Admin+Paneli" alt="Admin Paneli" width="250" />
-</div>
-
 ## 🛠 Kullanılan Teknolojiler
 
 Bu proje güncel ve modern mobil geliştirme standartlarına uygun olarak inşa edilmiştir:
@@ -25,25 +15,33 @@ Bu proje güncel ve modern mobil geliştirme standartlarına uygun olarak inşa 
 
 ## ✨ Mevcut Özellikler (Çalışan Fonksiyonlar)
 
-- **Firebase Kimlik Doğrulama (Auth):** Güvenli kullanıcı girişi ve yetkilendirme (Admin / Standart Kullanıcı rol yapısı).
-- **Esnaf ve Hizmet Verenler Portalı:** Kategori tabanlı (Tesisatçı, Elektrikçi, Öğretmen vb.) arama ve listeleme yeteneği.
-- **Dinamik Ana Sayfa:** Kullanıcı deneyimini maksimize eden premium UI, kayan kampanya kartları ve "Empty State" (Boş Durum) tasarımları.
-- **Yüksek Performanslı Animasyonlar:** Gereksiz render yükünü engelleyecek şekilde optimize edilmiş *stagger* animasyonlar ve parallax scroll efektleri.
-- **Arama Motoru:** Kategori ve isim bazlı çalışan, sonuç bulunamadığında temizlenebilir filtre mantığı sunan arama altyapısı.
-- **Admin Paneli:** Platforma yeni esnaf/hizmet veren ekleme ve sistemdeki işletmeleri yönetme arayüzü.
+Sungurlum, kullanıcılara günlük yaşamı kolaylaştıran kapsamlı bir araç seti sunar:
+
+- **Firebase Kimlik Doğrulama (Auth):** Güvenli kullanıcı girişi, kayıt sistemi ve yetkilendirme (Admin / Standart / İşletme Sahibi rol yapısı).
+- **İkinci El Eşya & Seri İlan Platformu:** Kullanıcıların ücretsiz olarak ikinci el eşya, emlak, araç ve iş ilanı verip alabildiği entegre sistem.
+- **Şehir Portalı ve Esnaf Rehberi:** Kategori tabanlı (Tesisatçı, Elektrikçi, Öğretmen vb.) hızlı arama ve listeleme yeteneği. İşletme detayları, iletişim ve konum bilgileri.
+- **Sanal Market & Restoran Siparişi:** Yerel esnaftan ve restoranlardan doğrudan sipariş verebilme altyapısı (Arayüz ve sepet mantığı dahil).
+- **Gündelik Şehir Asistanı Özellikleri:**
+  - **Nöbetçi Eczaneler:** Güncel eczane nöbet listesi.
+  - **Vefat İlanları:** Şehre ait güncel duyurular.
+  - **Acil Durum Numaraları & Otobüs Saatleri:** Pratik erişim sağlayan faydalı araçlar.
+- **Dinamik Ana Sayfa:** Kullanıcı deneyimini maksimize eden premium UI, kayan kampanya (carousel) kartları ve içerik yokken çıkan şık "Empty State" (Boş Durum) tasarımları.
+- **Yüksek Performanslı Animasyonlar:** Gereksiz render yükünü engelleyecek şekilde optimize edilmiş *stagger* animasyonlar, parallax scroll efektleri ve Haptic Feedback (titreşim) bildirimleri.
+- **Gelişmiş Arama & Filtreleme Motoru:** Kategori ve isim bazlı çalışan arama altyapısı.
+- **Admin & İşletme Paneli:** Platforma yeni esnaf/hizmet veren ekleme, ilan onaylama ve sistemdeki işletmeleri yönetme arayüzü.
+- **Favoriler ve Bildirim Sistemi:** İlgilenilen işletme/ilanların favoriye alınması ve güncellemeler için uygulama içi bildirim modülü.
 
 🚀 *Gelecek Sürümlerde Eklenecek Özellikler:*
-- İkinci el eşya alım-satım / ilan panosu entegrasyonu
-- Kapsamlı sepet ve ödeme sistemi (Ödeme Entegrasyonu)
-- Esnafların kendi panellerinden menü ve ürün yönetimi
-- Google Maps üzerinden yakındaki esnafları harita üzerinde görüntüleme
+- Kapsamlı ödeme sistemi entegrasyonu (Iyzico / Stripe vs.)
+- Esnafların ve restoranların tamamen kendi menü/ürün/fiyat güncellemelerini yapabileceği izole işletme panelleri.
+- Gelişmiş kurye ve canlı sipariş takip sistemi.
 
 ## ⚙️ Kurulum Adımları
 
 Projeyi lokal ortamınızda ayağa kaldırmak için aşağıdaki komutları terminalinizde sırasıyla çalıştırın:
 
 ```bash
-# 1. Projeyi klonlayın ve klasöre girin (Repo URL'sini güncelleyin)
+# 1. Projeyi klonlayın ve klasöre girin
 git clone https://github.com/MelihEmin19/sungurlum.git
 cd sungurlum
 
@@ -57,7 +55,7 @@ cp .env.example .env
 npx expo start
 ```
 
-*Not: Uygulamayı geliştirme modunda (development) çalıştırdığınızda (Expo Go), hata ayıklama araçlarından dolayı hafif performans düşüşleri görülebilir. Tam optimize edilmiş hızı görmek için üretim (production) moduyla (`npx expo start --no-dev --minify`) veya APK/IPA derleyerek test edebilirsiniz.*
+*Not: Uygulamayı geliştirme modunda (development) çalıştırdığınızda (Expo Go), hata ayıklama araçlarından dolayı hafif performans düşüşleri görülebilir. Tam optimize edilmiş hızı görmek için üretim (production) moduyla (`npx expo start --no-dev --minify`) test edebilirsiniz.*
 
 ---
 **Geliştirici:** Melih Emin (MelihEmin19)
