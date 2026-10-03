@@ -18,7 +18,7 @@ Bu proje güncel ve modern mobil geliştirme standartlarına uygun olarak inşa 
 Sungurlum, kullanıcılara günlük yaşamı kolaylaştıran kapsamlı bir araç seti sunar:
 
 - **Firebase Kimlik Doğrulama (Auth):** Güvenli kullanıcı girişi, kayıt sistemi ve yetkilendirme (Admin / Standart / İşletme Sahibi rol yapısı).
-- **İkinci El Eşya & Seri İlan Platformu:** Kullanıcıların ücretsiz olarak ikinci el eşya, emlak, araç ve iş ilanı verip alabildiği entegre sistem.
+- **İkinci El Eşya & Seri İlan Platformu:** Kullanıcıların ücretsiz olarak ikinci el eşya ve iş ilanı verip alabildiği entegre sistem.
 - **Şehir Portalı ve Esnaf Rehberi:** Kategori tabanlı (Tesisatçı, Elektrikçi, Öğretmen vb.) hızlı arama ve listeleme yeteneği. İşletme detayları, iletişim ve konum bilgileri.
 - **Sanal Market & Restoran Siparişi:** Yerel esnaftan ve restoranlardan doğrudan sipariş verebilme altyapısı (Arayüz ve sepet mantığı dahil).
 - **Gündelik Şehir Asistanı Özellikleri:**
@@ -26,7 +26,7 @@ Sungurlum, kullanıcılara günlük yaşamı kolaylaştıran kapsamlı bir araç
   - **Vefat İlanları:** Şehre ait güncel duyurular.
   - **Acil Durum Numaraları & Otobüs Saatleri:** Pratik erişim sağlayan faydalı araçlar.
 - **Dinamik Ana Sayfa:** Kullanıcı deneyimini maksimize eden premium UI, kayan kampanya (carousel) kartları ve içerik yokken çıkan şık "Empty State" (Boş Durum) tasarımları.
-- **Yüksek Performanslı Animasyonlar:** Gereksiz render yükünü engelleyecek şekilde optimize edilmiş *stagger* animasyonlar, parallax scroll efektleri ve Haptic Feedback (titreşim) bildirimleri.
+- **Yüksek Performanslı Animasyonlar:** Gereksiz render yükünü engelleyecek şekilde optimize edilmiş *stagger* animasyonlar ve parallax scroll efektleri.
 - **Gelişmiş Arama & Filtreleme Motoru:** Kategori ve isim bazlı çalışan arama altyapısı.
 - **Admin & İşletme Paneli:** Platforma yeni esnaf/hizmet veren ekleme, ilan onaylama ve sistemdeki işletmeleri yönetme arayüzü.
 - **Favoriler ve Bildirim Sistemi:** İlgilenilen işletme/ilanların favoriye alınması ve güncellemeler için uygulama içi bildirim modülü.
