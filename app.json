@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Sungurlum",
+    "slug": "sungurlum",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/sungurlum_icon_v3.png",
+    "scheme": "sungurlum",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sungurlum.app"
+    },
+    "android": {
+      "package": "com.sungurlum.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#38C0BC",
+        "foregroundImage": "./assets/images/sungurlum_icon_v3.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/sungurlum_icon_v3.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#38C0BC"
+        }
+      ],
+      "@react-native-google-signin/google-signin"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6056f299-3ddc-4d56-afae-b316d5193357"
+      }
+    },
+    "owner": "melihtrs-team"
+  }
+}
